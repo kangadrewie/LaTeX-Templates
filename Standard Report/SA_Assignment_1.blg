@@ -1,0 +1,17 @@
+[0] Config.pm:304> INFO - This is Biber 2.14
+[0] Config.pm:307> INFO - Logfile is 'SA_Assignment_1.blg'
+[84] biber-darwin:322> INFO - === Sun Mar  7, 2021, 21:00:26
+[111] Biber.pm:415> INFO - Reading 'SA_Assignment_1.bcf'
+[228] Biber.pm:943> INFO - Found 1 citekeys in bib section 0
+[267] Biber.pm:4256> INFO - Processing section 0
+[280] Utils.pm:75> INFO - Globbing data source 'references.bib'
+[281] Utils.pm:91> INFO - Globbed data source 'references.bib' to references.bib
+[298] Biber.pm:4455> INFO - Looking for bibtex format file 'references.bib' for section 0
+[299] bibtex.pm:1653> INFO - LaTeX decoding ...
+[331] bibtex.pm:1471> INFO - Found BibTeX data source 'references.bib'
+[406] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[414] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[415] Biber.pm:4084> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[415] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[420] bbl.pm:652> INFO - Writing 'SA_Assignment_1.bbl' with encoding 'UTF-8'
+[439] bbl.pm:755> INFO - Output to SA_Assignment_1.bbl

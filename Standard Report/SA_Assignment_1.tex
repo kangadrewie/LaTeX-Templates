@@ -1,0 +1,44 @@
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, width=150mm, top=25mm, bottom=25mm]{geometry}
+\usepackage{titlesec}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{fancyhdr}
+\fancyhead{}
+\fancyhead[RO, LE]{Systems Architecture}
+\fancyfoot{}
+\fancyfoot[LE, RO]{\thepage}
+\usepackage{graphicx}
+\graphicspath{{images/}}
+
+\usepackage{etoolbox}
+\patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{fancy}}{}{}
+
+\titleformat{\chapter}{\normalfont\huge\bf}{\thechapter.}{20pt}{\huge\bf}
+
+\usepackage[style=authoryear-ibid, backend=biber]{biblatex}
+\addbibresource{references.bib}
+
+\pagestyle{fancy}
+
+\begin{document}
+    \input{TitlePage}
+
+    \tableofcontents
+    \newpage
+
+    \chapter{Introduction}
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+        \section{Introduction}
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+            \subsection{Background}
+            This is background \parencite{einstein} 
+
+        \section{Conclusion}
+
+        \printbibliography
+
+\end{document}
